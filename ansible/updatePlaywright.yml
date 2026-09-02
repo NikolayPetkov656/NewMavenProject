@@ -6,6 +6,9 @@
 
   tasks:
     - name: Install Playwright
+
       ansible.builtin.command:
+
         cmd: npm install --save-dev playwright@1.57.0
+
         chdir: "{{ playbook_dir }}/.."
